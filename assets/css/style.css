@@ -1,0 +1,155 @@
+:root {
+    --outer-space: aliceblue;
+    --white: #fff;
+}
+
+::selection {
+    background-color: var(--outer-space);
+    color: var(--white);
+}
+
+html {
+    font-size: 70%;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: var(--outer-space);
+    font-family: Roboto, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: var(--white);
+    font-size: 1.75rem;
+}
+
+.header {
+    padding: 0.2rem 0;
+    justify-content: space-between;
+    background-color: var(--outer-space);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+h1 {
+    padding: .2rem .5rem .2rem 5rem;
+    font-size: 200%;
+    color: black;
+  }
+
+.header nav ul {
+    margin-right: 4rem;
+    gap: 2rem;
+}
+
+.header nav ul li {
+    position: relative;
+}
+
+.header nav ul li::after {
+    position: absolute;
+    bottom: -20%;
+    height: 0.1rem;
+}
+
+.hero {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    text-align: center;
+    gap: 3%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 150%;
+    color: black;
+    flex: 1;
+    position: relative;
+}
+
+.projects-header {
+    background-color: grey;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+#about-me h2 {
+    text-align: center;
+    font-size: 150%;
+    flex: 1;
+    position: relative;
+}
+#about-me div {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#about-me div p {
+    color: black;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: orange;
+  
+    /* outline is like border, but on the outside of the box instead of inside */
+    outline: 2px dashed black;
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card .card-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--outer-space);
+    color: orange;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+  
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px grey, 0 0 15px grey;
+}
+  
+  /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+.code-card .code-block {
+    flex-grow: 1;
+}
+
+footer {
+    background: #272833;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 0.75;
+}
+
+@media screen and (min-width: 768px)
+  
+@media screen and (min-width: 992px) 
