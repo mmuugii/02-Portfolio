@@ -82,6 +82,48 @@ section h2 {
     margin-bottom: 0.5rem;
 }
 
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.project-card {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: black;
+    outline: 1px solid black;
+    border-radius: 15px;
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.project-card .card-header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--outer-space);
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+  
+.project-card:hover,
+.project-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px grey, 0 0 15px grey;
+}
+  
+.project-card .code-block {
+    flex-grow: 1;
+}
+
 #about-me h2 {
     text-align: center;
     font-size: 150%;
@@ -95,50 +137,6 @@ section h2 {
 
 #about-me div p {
     color: black;
-}
-
-.card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-}
-
-.code-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: orange;
-  
-    /* outline is like border, but on the outside of the box instead of inside */
-    outline: 2px dashed black;
-    outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-}
-
-.code-card .card-header {
-    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-    position: relative;
-    margin: -4rem 0 1.5rem 0;
-    padding: 0.5rem 1rem;
-    background-color: var(--outer-space);
-    color: orange;
-    border: 2px solid black;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-}
-  
-  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.code-card:hover,
-.code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px grey, 0 0 15px grey;
-}
-  
-  /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-.code-card .code-block {
-    flex-grow: 1;
 }
 
 footer {
