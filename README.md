@@ -19,7 +19,7 @@ https://mmuugii.github.io/02-Portfolio/
 
 ## Screenshot of Website
 
-![alt="Screenshot of deployed website"](./assets/image_2.png)
+![alt="Screenshot of deployed website"](./assets/images/_Users_muugiim_Documents_bootcamp_homework_02-Portfolio_index.html%20(1).png)
 
 ## Credits
 
