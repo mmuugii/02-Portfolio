@@ -15,7 +15,7 @@ This website's usage is to be user accessible, with working links. Also, the web
 ## Links
 
 Below is the link to the deployed website:
-https://mmuugii.github.io/WK1-HW-WEBPAGE/
+https://mmuugii.github.io/02-Portfolio/
 
 ## Screenshot of Website
 
