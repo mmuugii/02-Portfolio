@@ -34,6 +34,7 @@ body {
     width: 100%;
     font-size: 1.1rem;
     align-items: center;
+    z-index: 10;
 }
 
 h1 {
@@ -83,7 +84,6 @@ section h2 {
 }
 
 .card-column {
-    flex: 1 0 100%;
     padding: 1.5rem;
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
@@ -94,7 +94,7 @@ section h2 {
     max-width: 300px;
     text-align: center;
     justify-content: flex-start;
-    min-height: 100%;
+    min-height: 86%;
     padding: 2rem;
     color: black;
     outline: 1px solid black;
@@ -107,7 +107,6 @@ section h2 {
 .project-card .card-header {
     position: relative;
     margin: -4rem 0 1.5rem 0;
-    padding: 0.5rem 1rem;
     background-color: var(--outer-space);
     color: black;
     border: 1px solid black;
@@ -117,7 +116,7 @@ section h2 {
   
 .project-card:hover,
 .project-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px grey, 0 0 15px grey;
+    box-shadow: inset 0px 0px 8px #272833, 0 0 15px #272833;
 }
   
 .project-card .code-block {
@@ -148,6 +147,36 @@ footer {
     line-height: 0.75;
 }
 
-@media screen and (min-width: 768px)
+.card-container {
+    display: flex;
+}
+
+/* .card {
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
   
-@media screen and (min-width: 992px) 
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+
+.container {
+    padding: 2px 16px;
+} */
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+  
+
+@media screen and (min-width: 768px) {
+
+}
+  
+@media screen and (min-width: 992px) {
+
+}
