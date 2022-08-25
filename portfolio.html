@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muugii's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"
+    <title>Muugii's Portfolio</title> 
+    <!-- Added in website title meta data -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" 
 </head>
 <body>
     <header class="header flex">
+        <img src="./assets/images/8BDCCA97-0132-4988-91EE-4DEE37056402_1_105_c.jpeg" alt="mock avatar" style="width: 75px;" class="avatar-img">
         <h1>Muugii Munkhbold</h1>
         <nav>
+            <!-- nav bar list with working links -->
             <ul class="flex">
                 <li>
                     <a href="#projects">Projects</a>
@@ -24,17 +27,20 @@
             </ul>
         </nav>
     </header>
+    <!-- Added in Hero Image. -->
     <hero>
         <img class="hero" src="./assets/images/B79A2404-F165-4513-9673-0A625CAFC14E_1_105_c.jpeg" />
     </hero>
+    <!-- Beginning of Projects Section -->
     <section class="projects-header" id="projects">
         <h2>Projects</h2>
+        <!-- div containing all 3 cards -->
         <div class="card-container">
             <div class="card-column">
                 <figure class="card project-card">
                     <h2 class="card-header">Code Refactor</h2>
                     <div class="card-body">
-                        <img src="./assets/images/01-html-css-git-homework-demo.png" style="width: 200px;">
+                        <a href="https://mmuugii.github.io/WK1-HW-WEBPAGE/"><img src="./assets/images/01-html-css-git-homework-demo.png" style="width: 200px;"></a>
                         <p>Refactored given code in 01 Module.</p>
                     </div>
                 </figure>
@@ -43,8 +49,8 @@
                 <figure class="card project-card">
                     <h2 class="card-header">Pre-Work Study Guide</h2>
                     <div class="card-body">
-                        <img src="./assets/images/Screen Shot 2022-08-25 at 11.07.20 AM.png" style="width: 275px;">
-                        <p>CSS CheatSheet from 02 Module.</p>
+                        <a href="https://mmuugii.github.io/prework-study-guide/"><img src="./assets/images/Screen Shot 2022-08-25 at 11.07.20 AM.png" style="width: 275px;"></a> 
+                        <p>Pre-Work Study Guide.</p>
                     </div>
                 </figure>
             </div>
@@ -52,21 +58,24 @@
                 <figure class="card project-card">
                     <h2 class="card-header">Coming Soon.</h2>
                     <div class="card-body">
-                        <img src="./assets/images/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpeg" style="width: 200px;">
+                        <img src="./assets/images/360_F_376408140_kiazgwOvkEy0e50oxgF5kllIl7j2q1SQ.jpeg" style="width: 200px;" />
                         <p>Coming Soon.</p>
                     </div>
                 </figure>
             </div>
         </div>
     </section>
+    <!-- Added in section with my about me information. -->
     <section id="about-me">
         <h2>About Me</h2>
+        <img src="./assets/images/5AA7068B-AE38-4D48-93B2-41E4C9627D17_1_105_c.jpeg" alt="Self Image" style="width: 100px;"/>
         <div class="flex">
             <p>Hello, World. My name is Muugii Munkhbold and this is my portfolio. I will update this page as our coding bootcamp progresses.</p>
         </div>
     </section>
+    <!-- Below is the footer section. -->
     <footer id="contact-me">
-        <h2>Contact Me</h2>
+        <h3>Contact Me</h3>
         <section>
             <h3>Phone</h3>
             <p>(520) 878-xxxx</p>
@@ -82,5 +91,6 @@
             </p>
         </section>
     </footer>
+    <!-- End of the footer section. -->
 </body>
 </html>
