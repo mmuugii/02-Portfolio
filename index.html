@@ -6,15 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muugii's Portfolio</title> 
     <!-- Added in website title meta data -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+        integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css"  -->
 </head>
 <body>
-    <header class="header flex">
+<section class="hero is-success is-fullheight">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+    <header class="navbar">
+        <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+            <a class="navbar-item is-active">
+                Home
+            </a>
+            <a class="navbar-item">
+                Examples
+            </a>
+            <a class="navbar-item">
+                Documentation
+            </a>
+            <span class="navbar-item">
+                <a class="button is-success is-inverted">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Download</span>
+                </a>
+            </span>
+            </div>
+        </div>
+        </div>
+    </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+    <div class="container has-text-centered">
+        <p class="title">
+        Title
+        </p>
+        <p class="subtitle">
+        Subtitle
+        </p>
+    </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+        <ul>
+            <li class="is-active"><a>Overview</a></li>
+            <li><a>Modifiers</a></li>
+            <li><a>Grid</a></li>
+            <li><a>Elements</a></li>
+            <li><a>Components</a></li>
+            <li><a>Layout</a></li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+</section>
+
+    <!-- <header class="header flex">
         <img src="./assets/images/8BDCCA97-0132-4988-91EE-4DEE37056402_1_105_c.jpeg" alt="mock avatar" style="width: 75px;" class="avatar-img">
         <h1>Muugii Munkhbold</h1>
-        <nav>
+        <nav> -->
             <!-- nav bar list with working links -->
-            <ul class="flex">
+            <!-- <ul class="flex">
                 <li>
                     <a href="#projects">Projects</a>
                 </li>
@@ -26,16 +101,16 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     <!-- Added in Hero Image. -->
-    <hero>
+    <!-- <hero>
         <img class="hero" src="./assets/images/B79A2404-F165-4513-9673-0A625CAFC14E_1_105_c.jpeg" />
-    </hero>
+    </hero> -->
     <!-- Beginning of Projects Section -->
-    <section class="projects-header" id="projects">
-        <h2>Projects</h2>
+    <!-- <section class="projects-header" id="projects">
+        <h2>Projects</h2> -->
         <!-- div containing all 3 cards -->
-        <div class="card-container">
+        <!-- <div class="card-container">
             <div class="card-column">
                 <figure class="card project-card">
                     <h2 class="card-header">Code Refactor</h2>
@@ -64,17 +139,17 @@
                 </figure>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Added in section with my about me information. -->
-    <section id="about-me">
+    <!-- <section id="about-me">
         <h2>About Me</h2>
         <img src="./assets/images/5AA7068B-AE38-4D48-93B2-41E4C9627D17_1_105_c.jpeg" alt="Self Image" style="width: 100px;"/>
         <div class="flex">
             <p>Hello, World. My name is Muugii Munkhbold and this is my portfolio. I will update this page as our coding bootcamp progresses.</p>
         </div>
-    </section>
+    </section> -->
     <!-- Below is the footer section. -->
-    <footer id="contact-me">
+    <!-- <footer id="contact-me">
         <h3>Contact Me</h3>
         <section>
             <h3>Phone</h3>
@@ -90,7 +165,7 @@
                 <a href="https://www.linkedin.com/in/mmuugii/">LinkedIn</a>
             </p>
         </section>
-    </footer>
+    </footer> -->
     <!-- End of the footer section. -->
 </body>
 </html>
