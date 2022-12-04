@@ -1,185 +1,3 @@
-/* Set up the root background colors of the page */
-/* :root {
-    --outer-space: aliceblue;
-    --white: #fff;
-} */
-
-/* ::selection {
-    background-color: var(--outer-space);
-    color: var(--white);
-} */
-
-/* html {
-    font-size: 70%;
-} */
-/* Added in the flex of the page */
-/* .flex {
-    display: flex;
-} */
-/* Affects the entire body of the html */
-/* body {
-    background-color: var(--outer-space);
-    font-family: Roboto, Helvetica, sans-serif;
-    line-height: 1.5;
-    color: var(--white);
-    font-size: 1.75rem;
-} */
-/* The below section affects the header and the nav bar */
-/* .header {
-    padding: 0.2rem 0;
-    justify-content: space-between;
-    background-color: var(--outer-space);
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-size: 1.1rem;
-    align-items: center;
-    z-index: 10;
-}
-
-h1 {
-    padding: .2rem .5rem .2rem 5rem;
-    font-size: 200%;
-    color: black;
-    flex: auto;
-  }
-
-.header nav ul {
-    margin-right: 4rem;
-    gap: 2rem;
-}
-
-.header nav ul li {
-    position: relative;
-}
-
-.header nav ul li::after {
-    position: absolute;
-    bottom: -20%;
-    height: 0.1rem;
-} */
-/* This is the end of the header section */
-
-/* Beginning of the hero image */
-/* .hero {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-} */
-
-/* Affects the entire sections and the cards */
-/* section {
-    text-align: center;
-    gap: 3%;
-} */
-
-/* section h2 {
-    text-align: center;
-    font-size: 150%;
-    color: black;
-    flex: 1;
-    position: relative;
-}
-
-.projects-header {
-    background-color: grey;
-    padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
-}
-
-.card-column {
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-} */
-
-/* .project-card {
-    flex: 1 1 200px;
-    max-width: 300px;
-    text-align: center;
-    justify-content: flex-start;
-    min-height: 86%;
-    padding: 1.1rem;
-    color: black;
-    outline: 1px solid black;
-    border-radius: 15px;
-    outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-}
-
-.project-card .card-header {
-    position: relative;
-    margin: -4rem 0 1.5rem 0;
-    background-color: var(--outer-space);
-    color: black;
-    border: 1px solid black;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-}
-  
-.project-card:hover,
-.project-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px #272833, 0 0 15px #272833;
-}
-  
-.project-card .code-block {
-    flex-grow: 1;
-} */
-/* End of the section andp project cards section */
-
-/* This section is for the about me section */
-/* #about-me h2 {
-    text-align: center;
-    font-size: 150%;
-    flex: 1;
-    position: relative;
-}
-
-#about-me div {
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#about-me div p {
-    color: black;
-} */
-/* End of the about me section */
-
-/* Below is the footer section */
-/* footer {
-    background: #272833;
-    width: 100%;
-    padding: 0.5rem 0;
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 0.75;
-} */
-
-/* Added extra classes for the project cards */
-/* .card-container {
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* Image radii affectors */
-/* img {
-    border-radius: 5px 5px 0 0;
-}
-  
-.avatar-img {
-    border-radius: 50px;
-} */
-
-/* I struggled with the media selectors, i would greatly appreciate comments, thank you! */
-/* @media screen and (min-width: 768px) {
-    .card-container {
-        flex: 0 0 50%;
-
-    }
-} */
-
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -206,4 +24,55 @@ h1 {
 /* about section image css */
 .imageAboutPage {
     width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: white;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
 }
